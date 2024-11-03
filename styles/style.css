@@ -347,12 +347,10 @@ ol {
 
 .button:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .button:active {
   background-color: #545050;
-  border: 1px solid white;
 }
 
 .button:focus {
@@ -371,6 +369,15 @@ ol {
   z-index: -2;
 }
 
+.more-button {
+  display: block;
+  align-self: center;
+  width: 97.5%;
+  margin-left: 4px;
+  margin-bottom: 1px;
+  position: relative;
+}
+
 .search-form__submit-button {
   display: inline-block;
   align-self: flex-end;
@@ -378,23 +385,6 @@ ol {
   position: relative;
   padding-top: 2px;
   padding-bottom: 0px;
-}
-
-.more-button-template {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.more-button {
-  display: block;
-  align-self: center;
-  width: 97.5%;
-  outline: 1px solid white;
-  margin-left: 4px;
-  margin-bottom: 1px;
-  position: relative;
 }
 
 .visually-hidden {  
