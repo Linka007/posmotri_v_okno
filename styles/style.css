@@ -16,6 +16,9 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -35,12 +38,6 @@ fieldset {
 ul,
 ol {
   list-style: none;
-}
-
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .content {
@@ -168,6 +165,7 @@ ol {
   padding-bottom: 2px;
   min-width: 194px;
   height: 103px;
+  object-fit:cover;
 }
 
 .content__video-card-title {
@@ -181,6 +179,7 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 100%;
+  padding-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -239,7 +238,7 @@ ol {
   font-family: inherit;
   color: inherit;
   font-size: 18px;  
-  background-color: #1b1919;
+  background-color:transparent;
   border: none;
   text-align: left;
   border: 0;
@@ -278,13 +277,6 @@ ol {
   box-sizing: border-box;
   margin-left: 5px;
   padding-bottom: 5px;
-  padding-bottom: 0px;
-}
-
-.search-form__label-text:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  cursor: pointer;
 }
 
 .search-form__checkbox-list {
@@ -349,7 +341,6 @@ ol {
   color: white;
   font-size: 18px;
   font-weight: 700;
-  background: transparent;
   border: 1px solid white;
   min-height: 34px;
 }
@@ -365,21 +356,8 @@ ol {
 }
 
 .button:focus {
-  display: inline-block;
   outline: none;
   z-index: 1;
-}
-
-.search-form__submit-button {
-  display: inline-block;
-  box-sizing: border-box;
-  margin: 0;
-  align-self: flex-end;
-  width: 194px;
-  position: relative;
-  border: 1px solid white;
-  padding-top: 2px;
-  padding-bottom: 0px;
 }
 
 .button:focus:not(:active)::before {
@@ -393,13 +371,13 @@ ol {
   z-index: -2;
 }
 
-.button:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.button:focus:not(:active) {
-  border: 1px solid white;
+.search-form__submit-button {
+  display: inline-block;
+  align-self: flex-end;
+  width: 194px;
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 0px;
 }
 
 .more-button-template {
@@ -410,17 +388,13 @@ ol {
 }
 
 .more-button {
-  box-sizing: border-box;
-  margin-left: 4px;
   display: block;
   align-self: center;
-  justify-self: center;
   width: 97.5%;
   outline: 1px solid white;
-  position: relative;
-  box-sizing: border-box;
-  border: 1px;
+  margin-left: 4px;
   margin-bottom: 1px;
+  position: relative;
 }
 
 .visually-hidden {  
